@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitura de Tarot</title>
+    <script src="src/js/index.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Bem-vindo(a) ao Oraculo Virtual de Tarot</h1>
+
+        <h2>Selecione o tipo de tiragem</h2>
+      
+        <form id="tipo_de_tiragem">
+            <fieldset>  
+                <div>
+                    <input type="radio" name="tipo_de_tiragem" value="passado_presente_futuro" checked/>
+                    <label for="passado_presente_futuro">Passado, presente e futuro</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="tipo_de_tiragem" value="compreensao_da_realidade" />
+                    <label for="compreensao_da_realidade">Compreensão da realidade</label>
+                </div>
+                 <div>
+                    <input type="radio" name="tipo_de_tiragem" value="mandala_da_vida" />
+                    <label for="mandala_da_vida">Mandala da Vida</label>
+                </div>
+            </fieldset>
+        </form>
+
+        <button onclick="opDeTiragem();">Realizar leitura</button>
+
+        <h3>Resultado da tiragem: </h3>
+
+        <p id="tiragem"></p>
+
+    </div>
+</body>
+</html>
