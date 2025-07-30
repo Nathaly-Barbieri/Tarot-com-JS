@@ -13,11 +13,9 @@
 <body>
     <div class="container">
         <h1>Bem-vindo(a) ao Oraculo Virtual de Tarot</h1>
-      
-        <form class="tipo_de_tiragem">
-
+        <div class="tipo_de_tiragem">
+    <form>
             <h2>Selecione o tipo de tiragem</h2>
-
             <fieldset>  
                 <div>
                     <input type="radio" name="tipo_de_tiragem" value="passado_presente_futuro" checked/>
@@ -33,17 +31,20 @@
                     <label for="cruz_celta">Cruz Celta</label>
                 </div>
             </fieldset>
-
-            
         </form>
-<button onclick="opDeTiragem();">Realizar leitura</button>
-        <h3>Resultado da tiragem</h3>
+
+        <button onclick="opDeTiragem();">Realizar leitura</button>
+        </div>
+    
+
+        <h3>Resultado da sua tiragem de Tarot</h3>
         
         <div class="tiragemContainer">
+            <div id="tiragemReview">
+            </div>
             <div id="tiragem">
             </div>
         </div>
-
     </div>
 </body>
 </html>

@@ -1,43 +1,21 @@
+.container{
+    width: 100%;
+}
 .tiragemContainer{
     display: flex;   
-    width: 100%;
+    width: 90%;
     justify-content: center;
-}
-#tiragem{
-width: 80%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-  justify-items: center;
-}
-.cartas{
-    width: 30%;
-    border: 1px #000000 solid;
-    display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    height: 500px; 
-    margin: 10px 0 10px 0;
-    background-color: beige;
-}
-.cartas img{
-    height: 200px;
-}
-.cartas p, img, h4{
-     padding: 20px;
-     text-align: center;
-}
-.cartas h4{
-     padding: 20px;
-     text-align: center;
-     font-size: 20px;
-}
-h3{
-    text-align: center;
 }
 body{
-    background-color: rgb(195, 142, 245);
+ background-color: rgb(195, 142, 245);
+}
+h3{
+   text-align: center;
+}
+button{
+    margin: 20px 0 20px 0;
 }
 .fleur-de-leah-regular {
   font-family: "Fleur De Leah", cursive;
@@ -49,15 +27,82 @@ h1{
     text-align: center;
     font-size: 45px;
 }
-
-.tipo_de_tiragem{
-    width: 300px;
+#tiragem{
+width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  justify-items: center;
+   position: relative;
 }
-
-button{
-    margin: 20px 0 20px 0;
-}
-.container{
+#tiragemReview{
     width: 100%;
-    padding: 20px;
+    padding: 50px;
+    text-align: left;
 }
+.cartasCC{
+    width: 170px;
+    border: 1px #605f5f solid;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px;
+    background-color: beige;
+    position: absolute;
+}
+.cartasCC img{
+    height: 150px;
+    width: 60%;
+}
+.cartasCC p, img, h4{
+    font-size: 12px;
+    text-align: center;
+}
+.cartasCC h4{
+    text-align: center;
+    font-size: 14px;
+}
+.cartas{
+    width:25%;
+    border: 1px #605f5f solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 550px;
+    background-color: beige;
+}
+.cartas img{
+    width: 80%;
+    height: 60%;
+}
+.cartas p{
+    font-size: 16px;
+    padding: 0 10px 0 10px;
+    text-align: center;
+}
+.cartas h4{
+    padding: 0 10px 0 10px;
+    text-align: center;
+    font-size: 20px;
+}
+.tipo_de_tiragem, .tipo_de_tiragem fieldset{
+    width: 300px;
+    border: none;
+    padding: 20px;
+    text-align: left;
+}
+
+#CC-1{top: 450px; left: 400px; z-index: 2;}
+#CC-2{top: 450px; left: 400px; transform: rotate(90deg); z-index: 3;}
+#CC-3{top: 100px; left: 400px;}
+#CC-4{top: 450px; left: 720px;}
+#CC-5{top: 800px; left: 400px;}
+#CC-6{top: 450px; left: 80px;}
+#CC-7{top: 100px;  left: 970px;}
+#CC-8{top: 450px; left: 970px}
+#CC-9{top: 800px; left: 970px}
+#CC-10{top: 1150px; left:  970px}

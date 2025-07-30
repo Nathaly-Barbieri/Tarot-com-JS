@@ -186,6 +186,7 @@ function exibeBaralho(qtdcartas, tiragemType){
     //let baralho = AlldescCartas.join("<br>");
     let baralho = [];
     let tipoCarta = [];
+    let baralhoRw = [];
     switch(tiragemType)
     {
         case 1:
@@ -193,6 +194,7 @@ function exibeBaralho(qtdcartas, tiragemType){
         for(let index=0; index<qtdcartas; index++)
         {
               baralho[index] = "<div class='cartas'><h4>" + tipoCarta[index] + "</h4><p>" + AlldescCartas[index] + "</p><img src='src/assets/img/" + imgTiragem[index] + ".jpg'></div>";
+              baralhoRw[index] = "Carta " + (index + 1) + " (" + tipoCarta[index] + ") - " + AlldescCartas[index];
         }
         break;
 
@@ -201,23 +203,27 @@ function exibeBaralho(qtdcartas, tiragemType){
         for(let index=0; index<qtdcartas; index++)
         {
             baralho[index] = "<div class='cartas'><h4>" + tipoCarta[index] + "</h4><p>" + AlldescCartas[index] + "</p><img src='src/assets/img/" + imgTiragem[index] + ".jpg'></div>";
-            
+            baralhoRw[index] = "Carta " + (index + 1) + " (" + tipoCarta[index] + ") - " + AlldescCartas[index];
         }
         break;
         
         case 3:
-        tipoCarta = ["O presente", "Os obstaculos", "As reações do consulente diante da questão", "O passado", "Os Fatores ocultos", "O futuro", "O consulente", "Os fatores externos/O entorno", "o Caminho do destino", "O Desfecho/Resposta"];
+        tipoCarta = ["O presente", "Os obstaculos", "As reações do consulente diante da questão", "O passado", "Os Fatores ocultos", "O futuro", "O consulente", "Os fatores externos/O entorno", "O caminho do destino", "O Desfecho/Resposta"];
         for(let index=0; index<qtdcartas; index++)
         {
-            baralho[index] = "<div class='cartas'><h4>" + tipoCarta[index] + "</h4><p>" + AlldescCartas[index] + "</p><img src='src/assets/img/" + imgTiragem[index] + ".jpg'></div>";
+            baralho[index] = "<div class='cartasCC' id='CC-" + (index +1) + "'><h4>" + tipoCarta[index] + "</h4><p>" + AlldescCartas[index] + "</p><img src='src/assets/img/" + imgTiragem[index] + ".jpg'></div>";
+            baralhoRw[index] = "Carta " + (index + 1) + " (" + tipoCarta[index] + ") - " + AlldescCartas[index];
         }
         break;
     }
 
 
     baralho = baralho.join("");
+    baralhoRw = baralhoRw.join("<br>");
     resTiragem = document.getElementById("tiragem");
     resTiragem.innerHTML = baralho;
+    resTiragem = document.getElementById("tiragemReview");
+    resTiragem.innerHTML = baralhoRw;
 }
 
 function opDeTiragem(){
