@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leitura de Tarot</title>
+    <link rel = "stylesheet" href = "src/styles/index.css">
     <script src="src/js/index.js"></script>
 </head>
 <body>
@@ -23,8 +24,8 @@
                     <label for="compreensao_da_realidade">Compreensão da realidade</label>
                 </div>
                  <div>
-                    <input type="radio" name="tipo_de_tiragem" value="mandala_da_vida" />
-                    <label for="mandala_da_vida">Mandala da Vida</label>
+                    <input type="radio" name="tipo_de_tiragem" value="cruz_celta" />
+                    <label for="cruz_celta">Cruz Celta</label>
                 </div>
             </fieldset>
         </form>
@@ -32,8 +33,11 @@
         <button onclick="opDeTiragem();">Realizar leitura</button>
 
         <h3>Resultado da tiragem: </h3>
-
-        <p id="tiragem"></p>
+        
+        <div class="tiragemContainer">
+            <div id="tiragem">
+            </div>
+        </div>
 
     </div>
 </body>

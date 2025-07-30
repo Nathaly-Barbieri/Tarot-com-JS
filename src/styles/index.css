@@ -1,0 +1,27 @@
+.tiragemContainer{
+    display: flex;   
+    width: 100%;
+    justify-content: center;
+}
+#tiragem{
+width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  justify-items: center;
+}
+.cartas{
+    width: 30%;
+    border: 1px #000000 solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.cartas img{
+    height: 200px;
+}
+.cartas p, img, h4{
+     padding: 20px;
+     text-align: center;
+}

@@ -1,164 +1,163 @@
 let tarot = [
-  'O Louco',
-  'O Mago',
-  'A Sacerdotisa',
-  'A Imperatriz',
-  'O Imperador',
-  'O Hierofante',
-  'Os Enamorados',
-  'O Carro',
-  'A Força',
-  'O Eremita',
-  'A Roda da Fortuna',
-  'A Justiça',
-  'O Enforcado',
-  'A Morte',
-  'A Temperança',
-  'O Diabo',
-  'A Torre',
-  'A Estrela',
-  'A Lua',
-  'O Sol',
-  'O Julgamento',
-  'O Mundo',
-  'Ás de Paus',
-  'Dois de Paus',
-  'Três de Paus',
-  'Quatro de Paus',
-  'Cinco de Paus',
-  'Seis de Paus',
-  'Sete de Paus',
-  'Oito de Paus',
-  'Nove de Paus',
-  'Dez de Paus',
-  'Pajem de Paus',
-  'Cavaleiro de Paus',
-  'Rainha de Paus',
-  'Rei de Paus',
-  'Ás de Copas',
-  'Dois de Copas',
-  'Três de Copas',
-  'Quatro de Copas',
-  'Cinco de Copas',
-  'Seis de Copas',
-  'Sete de Copas',
-  'Oito de Copas',
-  'Nove de Copas',
-  'Dez de Copas',
-  'Pajem de Copas',
-  'Cavaleiro de Copas',
-  'Rainha de Copas',
-  'Rei de Copas',
-  'Ás de Espadas',
-  'Dois de Espadas',
-  'Três de Espadas',
-  'Quatro de Espadas',
-  'Cinco de Espadas',
-  'Seis de Espadas',
-  'Sete de Espadas',
-  'Oito de Espadas',
-  'Nove de Espadas',
-  'Dez de Espadas',
-  'Pajem de Espadas',
-  'Cavaleiro de Espadas',
-  'Rainha de Espadas',
-  'Rei de Espadas',
-  'Ás de Ouros',
-  'Dois de Ouros',
-  'Três de Ouros',
-  'Quatro de Ouros',
-  'Cinco de Ouros',
-  'Seis de Ouros',
-  'Sete de Ouros',
-  'Oito de Ouros',
-  'Nove de Ouros',
-  'Dez de Ouros',
-  'Pajem de Ouros',
-  'Cavaleiro de Ouros',
-  'Rainha de Ouros',
-  'Rei de Ouros'
-], tiragem = [], qtdcartas, tiposDeTiragem = ['passado_presente_futuro', 'compreensao_da_realidade', 'mandala_da_vida'];
+"O Louco",
+  "O Mago",
+  "A Sacerdotisa",
+  "A Imperatriz",
+  "O Imperador",
+  "O Hierofante",
+  "Os Amantes",
+  "O Carro",
+  "A Força",
+  "O Eremita",
+  "A Roda da Fortuna",
+  "A Justiça",
+  "O Enforcado",
+  "A Morte",
+  "A Temperança",
+  "O Diabo",
+  "A Torre",
+  "A Estrela",
+  "A Lua",
+  "O Sol",
+  "O Julgamento",
+  "O Mundo",
+  "Dois de Copas",
+  "Três de Copas",
+  "Quatro de Copas",
+  "Cinco de Copas",
+  "Seis de Copas",
+  "Sete de Copas",
+  "Oito de Copas",
+  "Nove de Copas",
+  "Dez de Copas",
+  "Ás de Copas",
+  "Rei de Copas",
+  "Cavaleiro de Copas",
+  "Pajem de Copas",
+  "Rainha de Copas",
+  "Dois de Ouros",
+  "Três de Ouros",
+  "Quatro de Ouros",
+  "Cinco de Ouros",
+  "Seis de Ouros",
+  "Sete de Ouros",
+  "Oito de Ouros",
+  "Nove de Ouros",
+  "Dez de Ouros",
+  "Ás de Ouros",
+  "Rei de Ouros",
+  "Cavaleiro de Ouros",
+  "Pajem de Ouros",
+  "Rainha de Ouros",
+  "Dois de Espadas",
+  "Três de Espadas",
+  "Quatro de Espadas",
+  "Cinco de Espadas",
+  "Seis de Espadas",
+  "Sete de Espadas",
+  "Oito de Espadas",
+  "Nove de Espadas",
+  "Dez de Espadas",
+  "Ás de Espadas",
+  "Rei de Espadas",
+  "Cavaleiro de Espadas",
+  "Pajem de Espadas",
+  "Rainha de Espadas",
+  "Dois de Paus",
+  "Três de Paus",
+  "Quatro de Paus",
+  "Cinco de Paus",
+  "Seis de Paus",
+  "Sete de Paus",
+  "Oito de Paus",
+  "Nove de Paus",
+  "Dez de Paus",
+  "Ás de Paus",
+  "Rei de Paus",
+  "Cavaleiro de Paus",
+  "Pajem de Paus",
+  "Rainha de Paus"
+], tiragem = [], qtdcartas, tiposDeTiragem = ['passado_presente_futuro', 'compreensao_da_realidade', 'cruz_celta'];
 let descCartas = [
-  "Novos começos, liberdade, espontaneidade",
-  "Habilidade, iniciativa, poder de manifestação",
-  "Intuição, mistério, sabedoria interior",
-  "Fertilidade, nutrição, abundância",
-  "Autoridade, estrutura, liderança",
-  "Tradição, espiritualidade, conformidade",
-  "Relacionamentos, escolhas, harmonia",
-  "Determinação, vitória, progresso",
-  "Coragem, controle interno, força emocional",
-  "Busca interior, sabedoria, isolamento",
-  "Destino, ciclos, mudanças inesperadas",
-  "Equilíbrio, verdade, justiça",
-  "Rendição, nova perspectiva, sacrifício",
-  "Transformação, fim de um ciclo",
-  "Moderação, equilíbrio, paciência",
-  "Apego, tentações, armadilhas",
-  "Ruptura, mudanças repentinas",
-  "Esperança, inspiração, fé renovada",
-  "Ilusões, medos, intuição",
-  "Sucesso, otimismo, alegria",
-  "Renascimento, avaliação, revelações",
-  "Conclusão, realização, plenitude",
-  "Início criativo, inspiração, entusiasmo",
-  "Planejamento, decisões, visão de futuro",
-  "Exploração, expansão, progresso",
-  "Celebração, harmonia, lar",
-  "Conflito, competição, tensão",
-  "Reconhecimento, vitória, sucesso público",
-  "Desafio, persistência, defesa",
-  "Rapidez, progresso acelerado, movimento",
-  "Resiliência, vigilância, resistência",
-  "Sobrecarga, responsabilidades, estresse",
-  "Mensagem entusiástica, criatividade",
-  "Energia impulsiva, aventura, paixão",
-  "Independência, confiança, determinação",
-  "Liderança carismática, visão, coragem",
-  "Novo amor, compaixão, intimidade",
-  "Parcerias, união, harmonia emocional",
-  "Alegria, amizade, celebração",
-  "Desinteresse, contemplação, apatia",
-  "Decepção, perda, arrependimento",
-  "Nostalgia, memórias, infância",
-  "Ilusões, escolhas, imaginação",
-  "Desapego, transição emocional",
-  "Realização, satisfação emocional",
-  "Felicidade plena, harmonia familiar",
-  "Mensagem emocional, sensibilidade",
-  "Romance, idealismo, charme",
-  "Empatia, cuidado, amor maduro",
-  "Compaixão, sabedoria emocional, generosidade",
-  "Clareza mental, verdade, justiça",
-  "Conflito interno, escolhas difíceis",
-  "Coração partido, dor, separação",
-  "Recuperação, descanso, contemplação",
-  "Derrota, perda, ego",
-  "Transição, mudança, viagem",
-  "Engano, furtividade, estratégia",
-  "Restrição, medo, aprisionamento mental",
-  "Ansiedade, pesadelos, angústia",
-  "Traição, colapso, fim doloroso",
-  "Curiosidade, vigilância, aprendizado",
-  "Determinação, ação rápida, ambição",
-  "Intelecto, franqueza, independência",
-  "Poder mental, verdade, autoridade",
-  "Novas oportunidades financeiras, abundância",
-  "Equilíbrio financeiro, decisões práticas",
-  "Trabalho em equipe, habilidade, construção",
-  "Estabilidade, controle, segurança material",
-  "Carência, exclusão, dificuldades materiais",
-  "Generosidade, caridade, equilíbrio",
-  "Paciência, investimento, colheita futura",
-  "Trabalho diligente, aperfeiçoamento",
-  "Autossuficiência, luxo, gratidão",
-  "Riqueza, sucesso material, legado",
-  "Estudioso, novas oportunidades práticas",
-  "Responsável, confiável, trabalhador dedicado",
-  "Segurança, nutrição, praticidade",
-  "Sucesso financeiro, liderança, estabilidade"
-], AlldescCartas = [];
-
+  "Novos começos, liberdade, espontaneidade", // O Louco
+  "Habilidade, iniciativa, poder de manifestação", // O Mago
+  "Intuição, mistério, sabedoria interior", // A Sacerdotisa
+  "Fertilidade, nutrição, abundância", // A Imperatriz
+  "Autoridade, estrutura, liderança", // O Imperador
+  "Tradição, espiritualidade, conformidade", // O Hierofante
+  "Relacionamentos, escolhas, harmonia", // Os Amantes
+  "Determinação, vitória, progresso", // O Carro
+  "Coragem, controle interno, força emocional", // A Força
+  "Busca interior, sabedoria, isolamento", // O Eremita
+  "Destino, ciclos, mudanças inesperadas", // A Roda da Fortuna
+  "Equilíbrio, verdade, justiça", // A Justiça
+  "Rendição, nova perspectiva, sacrifício", // O Enforcado
+  "Transformação, fim de um ciclo", // A Morte
+  "Moderação, equilíbrio, paciência", // A Temperança
+  "Apego, tentações, armadilhas", // O Diabo
+  "Ruptura, mudanças repentinas", // A Torre
+  "Esperança, inspiração, fé renovada", // A Estrela
+  "Ilusões, medos, intuição", // A Lua
+  "Sucesso, otimismo, alegria", // O Sol
+  "Renascimento, avaliação, revelações", // O Julgamento
+  "Conclusão, realização, plenitude", // O Mundo
+  "Novo amor, compaixão, intimidade", // Ás de Copas
+  "Parcerias, união, harmonia emocional", // Dois de Copas
+  "Alegria, amizade, celebração", // Três de Copas
+  "Desinteresse, contemplação, apatia", // Quatro de Copas
+  "Decepção, perda, arrependimento", // Cinco de Copas
+  "Nostalgia, memórias, infância", // Seis de Copas
+  "Ilusões, escolhas, imaginação", // Sete de Copas
+  "Desapego, transição emocional", // Oito de Copas
+  "Realização, satisfação emocional", // Nove de Copas
+  "Felicidade plena, harmonia familiar", // Dez de Copas
+  "Mensagem emocional, sensibilidade", // Pajem de Copas
+  "Romance, idealismo, charme", // Cavaleiro de Copas
+  "Empatia, cuidado, amor maduro", // Rainha de Copas
+  "Compaixão, sabedoria emocional, generosidade", // Rei de Copas
+  "Novas oportunidades financeiras, abundância", // Ás de Ouros
+  "Equilíbrio financeiro, decisões práticas", // Dois de Ouros
+  "Trabalho em equipe, habilidade, construção", // Três de Ouros
+  "Estabilidade, controle, segurança material", // Quatro de Ouros
+  "Carência, exclusão, dificuldades materiais", // Cinco de Ouros
+  "Generosidade, caridade, equilíbrio", // Seis de Ouros
+  "Paciência, investimento, colheita futura", // Sete de Ouros
+  "Trabalho diligente, aperfeiçoamento", // Oito de Ouros
+  "Autossuficiência, luxo, gratidão", // Nove de Ouros
+  "Riqueza, sucesso material, legado", // Dez de Ouros
+  "Estudioso, novas oportunidades práticas", // Pajem de Ouros
+  "Responsável, confiável, trabalhador dedicado", // Cavaleiro de Ouros
+  "Segurança, nutrição, praticidade", // Rainha de Ouros
+  "Sucesso financeiro, liderança, estabilidade", // Rei de Ouros
+  "Clareza mental, verdade, justiça", // Ás de Espadas
+  "Conflito interno, escolhas difíceis", // Dois de Espadas
+  "Coração partido, dor, separação", // Três de Espadas
+  "Recuperação, descanso, contemplação", // Quatro de Espadas
+  "Derrota, perda, ego", // Cinco de Espadas
+  "Transição, mudança, viagem", // Seis de Espadas
+  "Engano, furtividade, estratégia", // Sete de Espadas
+  "Restrição, medo, aprisionamento mental", // Oito de Espadas
+  "Ansiedade, pesadelos, angústia", // Nove de Espadas
+  "Traição, colapso, fim doloroso", // Dez de Espadas
+  "Curiosidade, vigilância, aprendizado", // Pajem de Espadas
+  "Determinação, ação rápida, ambição", // Cavaleiro de Espadas
+  "Intelecto, franqueza, independência", // Rainha de Espadas
+  "Poder mental, verdade, autoridade", // Rei de Espadas
+  "Início criativo, inspiração, entusiasmo", // Ás de Paus
+  "Planejamento, decisões, visão de futuro", // Dois de Paus
+  "Exploração, expansão, progresso", // Três de Paus
+  "Celebração, harmonia, lar", // Quatro de Paus
+  "Conflito, competição, tensão", // Cinco de Paus
+  "Reconhecimento, vitória, sucesso público", // Seis de Paus
+  "Desafio, persistência, defesa", // Sete de Paus
+  "Rapidez, progresso acelerado, movimento", // Oito de Paus
+  "Resiliência, vigilância, resistência", // Nove de Paus
+  "Sobrecarga, responsabilidades, estresse", // Dez de Paus
+  "Mensagem entusiástica, criatividade", // Pajem de Paus
+  "Energia impulsiva, aventura, paixão", // Cavaleiro de Paus
+  "Independência, confiança, determinação", // Rainha de Paus
+  "Liderança carismática, visão, coragem" // Rei de Paus
+], AlldescCartas = [], imgTiragem = [];
 
 function sorteiaCarta(){
     return Math.floor(Math.random() * (77 - 0 + 1)) + 0;
@@ -169,25 +168,59 @@ function montaBaralho(qtdcartas){
     {
         let cartaSorteada = sorteiaCarta();
         tiragem[index] = tarot[cartaSorteada];
+        imgTiragem[index] = cartaSorteada;
         AlldescCartas[index] = (tiragem[index] + " - " + descCartas[index]);
     }
 }
 
-function exibeBaralho(qtdcartas){
+function exibeBaralho(qtdcartas, tiragemType){
     montaBaralho(qtdcartas);
-    let baralho = AlldescCartas.join("<br>");
+    //let baralho = AlldescCartas.join("<br>");
+    let baralho = [];
+    let tipoCarta = [];
+    switch(tiragemType)
+    {
+        case 1:
+        tipoCarta = ["O passado", "O presente", "O futuro"];
+        for(let index=0; index<qtdcartas; index++)
+        {
+              baralho[index] = "<div class='cartas'><h4>" + tipoCarta[index] + "</h4><p>" + AlldescCartas[index] + "</p><img src='src/assets/img/" + imgTiragem[index] + ".jpg'></div>";
+        }
+        break;
+
+        case 2:
+        tipoCarta = ["O consciente", "O inconsciente", "A realidade"];
+        for(let index=0; index<qtdcartas; index++)
+        {
+            baralho[index] = "<div class='cartas'><h4>" + tipoCarta[index] + "</h4><p>" + AlldescCartas[index] + "</p><img src='src/assets/img/" + imgTiragem[index] + ".jpg'></div>";
+            
+        }
+        break;
+        
+        case 3:
+        tipoCarta = ["O presente", "Os obstaculos", "As reações do consulente diante da questão", "O passado", "Os Fatores ocultos", "O futuro", "O consulente", "Os fatores externos/O entorno", "o Caminho do destino", "O Desfecho/Resposta"];
+        for(let index=0; index<qtdcartas; index++)
+        {
+            baralho[index] = "<div class='cartas'><h4>" + tipoCarta[index] + "</h4><p>" + AlldescCartas[index] + "</p><img src='src/assets/img/" + imgTiragem[index] + ".jpg'></div>";
+        }
+        break;
+    }
+
+
+    baralho = baralho.join("");
     resTiragem = document.getElementById("tiragem");
     resTiragem.innerHTML = baralho;
 }
 
 function opDeTiragem(){
     let tipoTiragem = document.querySelector('input[name="tipo_de_tiragem"]:checked').value;
-    if(tipoTiragem == tiposDeTiragem[0]){
-    exibeBaralho(3);
-    }if(tipoTiragem == tiposDeTiragem[1]){
-    exibeBaralho(3);
-    }if(tipoTiragem == tiposDeTiragem[2]){
-    exibeBaralho(14);
+    if(tipoTiragem == tiposDeTiragem[0])
+    {
+    exibeBaralho(3, 1);
+    }else if(tipoTiragem == tiposDeTiragem[1]){
+    exibeBaralho(3, 2);
+    }else{
+    exibeBaralho(10, 3);
     }
 }
 
