@@ -159,19 +159,27 @@ let descCartas = [
   "Liderança carismática, visão, coragem" // Rei de Paus
 ], AlldescCartas = [], imgTiragem = [];
 
-function sorteiaCarta(){
-    return Math.floor(Math.random() * (77 - 0 + 1)) + 0;
+function sorteiaCarta(qtd) {
+    const index = Array.from({ length: 78 }, (_, i) => i);
+    for (let i = index.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [index[i], index[j]] = [index[j], index[i]];
+    }
+    return index.slice(0, qtd);
 }
 
-function montaBaralho(qtdcartas){
-    for(let index=0; index<qtdcartas; index++)
-    {
-        let cartaSorteada = sorteiaCarta();
+function montaBaralho(qtdcartas) {
+    const totalCartas = tarot.length;
+    const indexSorteados = sorteiaCarta(qtdcartas);
+    
+    for (let index = 0; index < qtdcartas; index++) {
+        const cartaSorteada = indexSorteados[index];
         tiragem[index] = tarot[cartaSorteada];
         imgTiragem[index] = cartaSorteada;
-        AlldescCartas[index] = (tiragem[index] + " - " + descCartas[index]);
+        AlldescCartas[index] = tarot[cartaSorteada] + " - " + descCartas[cartaSorteada];
     }
 }
+
 
 function exibeBaralho(qtdcartas, tiragemType){
     montaBaralho(qtdcartas);
